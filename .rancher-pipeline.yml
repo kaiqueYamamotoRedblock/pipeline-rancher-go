@@ -19,3 +19,11 @@ stages:
   steps:
   - applyYamlConfig:
       path: ./deployment.yaml
+notification:
+  recipients:
+  - recipient: '#rancher'
+    notifier: c-nc94x:n-rxbnn
+  condition:
+  - Success
+  - Changed
+  - Failed
